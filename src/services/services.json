@@ -1,0 +1,30 @@
+{
+    "services": {
+        "routes": {
+            "/": {
+                "service": "home",
+                "calls": "home"
+            },
+            "/question/@calculator/@id": {
+                "service": "calculator",
+                "calls": "question"
+            },
+            "/calculator/@calculator": {
+                "service": "calculator",
+                "calls": "init_calculator"
+            },
+            "/finish/@calculator": {
+                "service": "calculator",
+                "calls": "finish_calculator"
+            }
+        },
+        "services": {
+            "home": {
+                "namespace": "FUST\\Service\\Home\\"
+            },
+            "calculator": {
+                "namespace": "FUST\\Service\\Calculator\\"
+            }
+        }
+    }
+}
